@@ -1,0 +1,9 @@
+div {
+    border: 2px solid black ;
+    padding: 20px 20px;
+    background-color: burlywood;
+    width: 50%;
+}
+div ul {
+     list-style-type: square;
+}
