@@ -29,8 +29,7 @@
 
 #hovers:hover {
     background-image: url(../images/goldi1.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    /* opacity: 0.5; */
+    image-resolution: 500px;
     color: brown;
+    opacity: 0.8;
 }
