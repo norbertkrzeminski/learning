@@ -21,13 +21,4 @@
     height: 200px;
     width: 200px;
     border: 1px solid black;
-    margin: 0 auto;
-}
-#hovers h2 {
-    text-align: center;
-}
-
-#hovers:hover {
-    background-color: blanchedalmond;
-    color: brown;
 }
