@@ -68,9 +68,6 @@ h2 {
 .main a:hover {
     color: #444;
 }
-#home-image img {
-    width: 100%;
-}
 
 footer {
     padding:6px 40px 6px 40px ;
@@ -80,7 +77,4 @@ footer {
     text-align: right;
 }
 
-.separator {
-    color: #ffffff;
-    font-size: 11px;
-}
+.separator
