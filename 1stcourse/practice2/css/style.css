@@ -113,3 +113,10 @@ footer {
     text-align: center;
     margin-bottom: 20px;
 }
+
+form p input {
+    border-radius: 5px;
+}
+form textarea {
+    border-radius: 10px;
+}
