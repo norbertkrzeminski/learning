@@ -116,7 +116,9 @@ footer {
 
 form p input {
     border-radius: 5px;
+    width: 80%;;
 }
 form textarea {
     border-radius: 10px;
+    width: 80%;
 }
