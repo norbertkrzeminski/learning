@@ -107,6 +107,7 @@ footer {
     padding: 10px 10px 10px 10px;
     margin: 0 auto;
     border: 2px solid black;
+    border-radius: 10px;
 }
 
 .main h1 {
@@ -116,9 +117,16 @@ footer {
 
 form p input {
     border-radius: 5px;
-    width: 80%;;
+    width: 100%;;
+    height: 20px;
+    background-color: #dddddd;
 }
 form textarea {
     border-radius: 10px;
-    width: 80%;
+    width: 100%;
+    background-color: #dddddd;
+}
+#submit {
+    height: 30px;
+    background-color: #cccccc;
 }
