@@ -10,3 +10,15 @@ div {
     margin: 20px;
     padding: 20px;
 }
+div p {
+    border: inherit;
+    margin: inherit;
+    padding: inherit;
+}
+a[href*="google"] {
+    background-color: rgb(96, 190, 96);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
