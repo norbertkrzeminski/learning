@@ -1,4 +1,4 @@
-#Hello Folks
+# Hello Folks
 
  I created this repo to learn both, frontend programming and basic git cli. Feel free to show me points where I can improve myself.
 
