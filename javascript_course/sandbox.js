@@ -97,4 +97,4 @@ resultArray = ninjas.pop();
 console.log(resultArray);
 //NULL
 let newAge = null;
-console.log(newAge, newAge + 3, 'The age is ${newAge} ' );
+console.log(newAge, newAge + 3, `The age is ${newAge}` );
