@@ -4,7 +4,7 @@ body, ul, li, h1, h2, a {
      font-family: arial;
 }
 
-header {
+.logo {
     background-color: #F63232;
     padding: 20px;
     text-align: center;
@@ -14,7 +14,7 @@ header {
     top: 0;
     left: 0;
 }
-header h1 {
+.logo__text {
      color: white;
      border: 8px solid white;
      padding: 6px 12px;
@@ -24,10 +24,10 @@ header h1 {
 .banner {
      position: relative;
 }
-.banner img{
+.banner__image{
     max-width: 100%;
 }
-.banner .welcome{
+.banner__textContainer{
     background-color: #FEB614;
     color: white;
     padding: 30px;
@@ -35,33 +35,34 @@ header h1 {
     left: 8px;
     top: 30%;
 }
-.banner h2{
+.banner__text{
     font-size: 50 px;
 }
-.banner h2 span {
+.banner__title{
     font-size: 1.2em;
 }
-nav {
+.menu{
     background-color:  #F4F4F4;
     padding: 20px ;
     position: sticky;
+    position: -webkit-sticky;
     top: 100px;
 }
-nav ul {
+.menu__container{
     white-space: nowrap;
     max-width:  1200px;
     margin: 0 auto;
 }
-nav li{
+.menu__option{
     width: 25%;
     display: inline-block;
     font-size:  24px;
 }
-nav li a{
+.menu__link{
     text-decoration: none;
     color: #4B4B4B;
 }
-nav li a.join{
+.join{
     color: #F63232;
 }
 main {

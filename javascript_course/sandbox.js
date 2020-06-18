@@ -98,3 +98,23 @@ console.log(resultArray);
 //NULL
 let newAge = null;
 console.log(newAge, newAge + 3, `The age is ${newAge}` );
+// booleans & comparisons
+console.log(true, false);
+//methods can return booleans
+let emailBooleans = 'luigi@thenetworknija.co.uk'
+// let resultBooleans = emailBooleans.includes('@');
+// let namesBooleans = ['mario', 'luigi', 'toad'];
+// let resultBooleans = namesBooleans.includes('luigi')
+// cons ole.log(resultBooleans);
+//comparison operators
+let ageBooleans = 25;
+// console.log(ageBooleans == 25);
+// console.log(ageBooleans == 30);
+// console.log(ageBooleans != 30);
+// console.log(ageBooleans > 20);
+// console.log(ageBooleans < 20);
+// console.log(ageBooleans <= 25);
+let nameB = 'shaun';
+console.log(nameB == 'Shaun');
+console.log(nameB > 'crystal');
+console.log(nameB > 'Shaun');
