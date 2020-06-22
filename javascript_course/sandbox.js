@@ -98,3 +98,16 @@ console.log(resultArray);
 //NULL
 let newAge = null;
 console.log(newAge, newAge + 3, `The age is ${newAge}` );
+
+// type conversion
+score = '100';
+console.log(typeof score);
+score = Number(score);
+console.log(score + 1);
+console.log(typeof score);
+
+// for loops
+for(let i=0; i<5;i++){
+    console.log('in loop: ', i)
+}
+console.log('loop finished');
