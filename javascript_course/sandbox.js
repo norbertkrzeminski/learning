@@ -204,7 +204,7 @@ switch(grade){
 
 // variables and block scope
 let age = 30; //global scope variable
-
+const name = 'shaun';
 if(true){
     let age = 40; // local scope variable
     let name = 'shaun';
@@ -219,13 +219,59 @@ if(true){
 console.log('outside code block', age, name, test);
 
 // function declaration
-function greet(){
-    console.log('Hello there');
-}
+// function greet(){
+//     console.log('Hello there');
+// }
+
 // function expression
 const speak = function(name = 'luigi', time = 'day'){
     // console.log('General Kenobi');
     console.log(`good ${time} ${name}`);
 }; // tylko wtedy uzywamy ; na koncu blocku
-greet();
+// greet();
 speak('mario', 'morning'); // wartosc wewnatrz nawiasu to argument
+
+// returnign values
+// const calcArea = function(radius){
+//     return 3.14 * radius**2;
+// }
+
+//arrow functions
+const calcArea = radius =>  3.14 * radius**2; // gdy jest tylko 1 argument to nie musimy uzywac ()
+// gdy nie ma argumentow lub jest ich wiecej niz 1 to trzeba uzywac()
+
+
+const area = calcArea(5);
+console.log(area);
+
+// const bill = function(products, tax){
+//     let total = 0;
+//     for(let i= 0; i < products.lenght; i++){
+//         total += products[i] +products[i]*tax;
+//     }
+//     return total;
+// }
+
+const bill = (products, tax) => {
+    let total = 0
+    for(let i= 0; i < products.length; i++){
+        total += products[i] +products[i]*tax;
+    }
+    return total;
+}
+
+console.log(bill([10,15,30], 0.2));
+
+
+// functions
+const greet = () => 'Hello there';
+let resultOne = greet();
+console.log(resultOne);
+// methods
+let resultTwo = name.toUpperCase();
+console.log(resultTwo);
+// callback functions and forEach
+let people = ['mario', 'luigi', 'bowser', 'shen', 'rju'];
+people.forEach(function(person){
+    console.log(person);
+})
