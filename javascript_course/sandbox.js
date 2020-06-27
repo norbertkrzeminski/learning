@@ -272,6 +272,52 @@ let resultTwo = name.toUpperCase();
 console.log(resultTwo);
 // callback functions and forEach
 let people = ['mario', 'luigi', 'bowser', 'shen', 'rju'];
-people.forEach(function(person){
-    console.log(person);
+const logPerson = (person, index) => {
+    console.log(`${index} - hello ${person}`)
+}
+people.forEach(logPerson);
+
+//get reference to the 'ul'
+const ul = document.querySelector('.people');
+let html = ``;
+people.forEach(person => {
+    //create html template
+    html += `<li style="color: purple">${person }</li>`
 })
+ul.innerHTML = html;
+
+// objects literals
+// const blogs = [
+//     {tittle: 'why do we love kebabs', likes: 30},
+//     {tittle: 'best restaurants in Wroclaw', likes: 50}
+// ];
+// console.log(blogs);
+let user = {
+    name: 'crystal', // key and value
+    age: 30,
+    email: 'crystal@ninjaweb.co.pl',
+    location: 'Berlin',
+    blogs: [{tittle: 'why do we love kebabs', likes: 30},
+    {tittle: 'best restaurants in Wroclaw', likes: 50}],
+    login(){
+        console.log('the user logged in');
+    },
+    logout(){
+        console.log('The user logged out');
+    },
+    logBlogs(){
+        // console.log(this.blogs[0]);
+        console.log('This user has written following blogs: ');
+        this.blogs.forEach(blog => {
+            console.log(blog.tittle,blog.likes);
+        })
+}};
+console.log(user);
+console.log(user.name);
+user.age = 35;
+console.log(user['name']);
+user['name'] = 'chun-li';
+console.log(typeof user);
+user.login();
+user.logBlogs();
+// Math objects
