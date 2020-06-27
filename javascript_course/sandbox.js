@@ -237,12 +237,12 @@ speak('mario', 'morning'); // wartosc wewnatrz nawiasu to argument
 // }
 
 //arrow functions
-const calcArea = radius =>  3.14 * radius**2; // gdy jest tylko 1 argument to nie musimy uzywac ()
-// gdy nie ma argumentow lub jest ich wiecej niz 1 to trzeba uzywac()
+// const calcArea = radius =>  3.14 * radius**2; // gdy jest tylko 1 argument to nie musimy uzywac ()
+// // gdy nie ma argumentow lub jest ich wiecej niz 1 to trzeba uzywac()
 
 
-const area = calcArea(5);
-console.log(area);
+// const area = calcArea(5);
+// console.log(area);
 
 // const bill = function(products, tax){
 //     let total = 0;
@@ -321,3 +321,27 @@ console.log(typeof user);
 user.login();
 user.logBlogs();
 // Math objects
+console.log(Math);
+console.log(Math.PI);
+console.log(Math.E);
+const area = 7.7;
+console.log(Math.round(area));
+console.log(Math.floor(area)); // floor zaokragla w dół
+console.log(Math.ceil(area)); // zaokragla w górę
+console.log(Math.trunc(area)); // nie pokazuje liczb po przecinku
+// random numbers
+const random =  Math.random();
+console.log(random);
+console.log(Math.round(random*100))
+//primitive values
+let scoreOne = 50;
+let scoreTwo = scoreOne;
+console.log(`ScoreOne: ${scoreOne}, ScoreTwo:${scoreTwo}`);
+scoreOne = 100;
+console.log(`ScoreOne: ${scoreOne}, ScoreTwo:${scoreTwo}`);
+// reference values
+const userOne = {name: 'rju', age: 30};
+const userTwo = userOne;
+console.log(userOne, userTwo);
+userOne.age = 40;
+console.log(userOne, userTwo);
