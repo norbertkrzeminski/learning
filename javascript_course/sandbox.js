@@ -263,28 +263,28 @@ const bill = (products, tax) => {
 console.log(bill([10,15,30], 0.2));
 
 
-// functions
-const greet = () => 'Hello there';
-let resultOne = greet();
-console.log(resultOne);
-// methods
-let resultTwo = name.toUpperCase();
-console.log(resultTwo);
-// callback functions and forEach
-let people = ['mario', 'luigi', 'bowser', 'shen', 'rju'];
-const logPerson = (person, index) => {
-    console.log(`${index} - hello ${person}`)
-}
-people.forEach(logPerson);
+// // functions
+// const greet = () => 'Hello there';
+// let resultOne = greet();
+// console.log(resultOne);
+// // methods
+// let resultTwo = name.toUpperCase();
+// console.log(resultTwo);
+// // callback functions and forEach
+// let people = ['mario', 'luigi', 'bowser', 'shen', 'rju'];
+// const logPerson = (person, index) => {
+//     console.log(`${index} - hello ${person}`)
+// }
+// people.forEach(logPerson);
 
-//get reference to the 'ul'
-const ul = document.querySelector('.people');
-let html = ``;
-people.forEach(person => {
-    //create html template
-    html += `<li style="color: purple">${person }</li>`
-})
-ul.innerHTML = html;
+// //get reference to the 'ul'
+// const ul = document.querySelector('.people');
+// let html = ``;
+// people.forEach(person => {
+//     //create html template
+//     html += `<li style="color: purple">${person }</li>`
+// })
+// ul.innerHTML = html;
 
 // objects literals
 // const blogs = [
@@ -345,3 +345,47 @@ const userTwo = userOne;
 console.log(userOne, userTwo);
 userOne.age = 40;
 console.log(userOne, userTwo);
+// const para = document.querySelector('div.error ');
+// // console.log(para);
+// const paras = document.querySelectorAll('p');
+// paras.forEach( para => {
+//     console.log(para);
+// })
+// // const errors = document.querySelectorAll('.error');
+// // console.log(errors);
+// console.log(paras[2]);
+// // get element by ID
+// const title = document.getElementById('title-page');
+// console.log(title);
+// // get element by their class name
+// const errors = document.getElementsByClassName('error');
+// console.log(errors); //nie da sie uzyc forEach na HTMLcollection
+// get element by their tag name
+// const paras = document.getElementsByTagName('p');
+// console.log(paras);
+// const para = document.querySelector('p');
+// console.log(para.innerText);
+// para.innerText  = ' ninjas are awesome!';
+const paras = document.querySelectorAll('p');
+// paras.forEach( para => {
+//     console.log(para.innerText);
+//     para.innerText += ' new text';
+// })
+const content = document.querySelector('.content');
+// console.log(content.innerHTML);
+// content.innerHTML = '<h2>this is new h2 tag</h2>';
+// const people = ['mario', 'yoshi', 'toad'];
+// people.forEach( person =>{
+//     content.innerHTML += `<p>${person}</p>`;
+// })
+const link =  document.querySelector('a');
+console.log(link.getAttribute('href'));
+link.setAttribute('href', 'https://www.wikipedia.com');
+link.innerText = 'wikipedia';
+const msg = document.querySelector('p');
+console.log(msg.getAttribute('class'));
+msg.setAttribute('class', 'success');
+msg.setAttribute('style', 'color: green');
+const title = document.querySelector('h1');
+console.log(title.style.color);
+title.style.margin = '50px';
