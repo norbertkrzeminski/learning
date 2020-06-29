@@ -72,6 +72,7 @@
 // //template way
 // let result4 = `The blog called ${tittle} by ${author} has ${likes} likes`;
 // console.log(result4);
+javascript_course_1
 // // creating html template
 // let html = `
 //     <h2>${tittle}</h2>
@@ -345,6 +346,7 @@ const userTwo = userOne;
 console.log(userOne, userTwo);
 userOne.age = 40;
 console.log(userOne, userTwo);
+javascript_course_1
 // const para = document.querySelector('div.error ');
 // // console.log(para);
 // const paras = document.querySelectorAll('p');
@@ -389,3 +391,54 @@ msg.setAttribute('style', 'color: green');
 const title = document.querySelector('h1');
 console.log(title.style.color);
 title.style.margin = '50px';
+//template way
+let result4 = `The blog called ${tittle} by ${author} has ${likes} likes`;
+console.log(result4);
+// creating html template
+let html = `
+    <h2>${tittle}</h2>
+    <p>By ${author}</p>
+    <span>This blog has ${likes} likes.</span>
+`;
+console.log(html);
+//arrays
+let ninjas = ['shaun','ryu', 'hun-li'];
+// ninjas[1] = 'ken';
+// console.log(ninjas[1]);
+// let ages = [20,25,30,35];
+// console.log(ages[2]);
+// let random = ['shaun', 'crystal', 30, 20];
+// console.log(random);
+console.log(ninjas.length);
+// array methods
+// let resultArray = ninjas.join(',');
+// let resultArray = ninjas.indexOf('shaun');
+// let resultArray = ninjas.concat(['ken', 'crystal']);
+let resultArray = ninjas.push('ken');
+resultArray = ninjas.pop();
+console.log(resultArray);
+//NULL
+let newAge = null;
+console.log(newAge, newAge + 3, `The age is ${newAge}` );
+// booleans & comparisons
+console.log(true, false);
+//methods can return booleans
+let emailBooleans = 'luigi@thenetworknija.co.uk'
+// let resultBooleans = emailBooleans.includes('@');
+// let namesBooleans = ['mario', 'luigi', 'toad'];
+// let resultBooleans = namesBooleans.includes('luigi')
+// cons ole.log(resultBooleans);
+//comparison operators
+let ageBooleans = 25;
+// console.log(ageBooleans == 25);
+// console.log(ageBooleans == 30);
+// console.log(ageBooleans != 30);
+// console.log(ageBooleans > 20);
+// console.log(ageBooleans < 20);
+// console.log(ageBooleans <= 25);
+let nameB = 'shaun';
+console.log(nameB == 'Shaun');
+console.log(nameB > 'crystal');
+console.log(nameB > 'Shaun');
+master
+master
