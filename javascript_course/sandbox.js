@@ -371,22 +371,41 @@ const paras = document.querySelectorAll('p');
 //     console.log(para.innerText);
 //     para.innerText += ' new text';
 // })
-const content = document.querySelector('.content');
+// const content = document.querySelector('.content');
 // console.log(content.innerHTML);
 // content.innerHTML = '<h2>this is new h2 tag</h2>';
 // const people = ['mario', 'yoshi', 'toad'];
 // people.forEach( person =>{
 //     content.innerHTML += `<p>${person}</p>`;
 // })
-const link =  document.querySelector('a');
-console.log(link.getAttribute('href'));
-link.setAttribute('href', 'https://www.wikipedia.com');
-link.innerText = 'wikipedia';
-const msg = document.querySelector('p');
-console.log(msg.getAttribute('class'));
-msg.setAttribute('class', 'success');
-msg.setAttribute('style', 'color: green');
-const title = document.querySelector('h1');
-console.log(title.style.color);
-title.style.margin = '50px';
-title.style.fontSize = '50px';
+// const link =  document.querySelector('a');
+// console.log(link.getAttribute('href'));
+// link.setAttribute('href', 'https://www.wikipedia.com');
+// link.innerText = 'wikipedia';
+// const msg = document.querySelector('p');
+// console.log(msg.getAttribute('class'));
+// msg.setAttribute('class', 'success');
+// msg.setAttribute('style', 'color: green');
+// const title = document.querySelector('h1');
+// console.log(title.style.color);
+// title.style.margin = '50px';
+// title.style.fontSize = '50px';
+// const content = document.querySelector('p');
+// console.log(content.classList);
+// content.classList.add('error');
+// content.classList.remove('error');
+// content.classList.add('success');
+paras.forEach( para =>{
+    let content = para.innerHTML;
+    if(content.includes('error')){ // alternatywnie content.textContent.includes()
+        para.classList.add('error');
+    }
+    else if(content.includes('success')){
+        para.classList.add('success');
+    }
+    // else{
+    //     console.log('nothing to do');
+    // }
+});
+
+// toggle() dodaje klasę
