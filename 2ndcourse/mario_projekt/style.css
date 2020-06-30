@@ -4,7 +4,7 @@ body, ul, li, h1, h2, a {
      font-family: arial;
 }
 
-header {
+.logo {
     background-color: #F63232;
     padding: 20px;
     text-align: center;
@@ -14,7 +14,7 @@ header {
     top: 0;
     left: 0;
 }
-header h1 {
+.logo__text {
      color: white;
      border: 8px solid white;
      padding: 6px 12px;
@@ -24,10 +24,10 @@ header h1 {
 .banner {
      position: relative;
 }
-.banner img{
+.banner__image{
     max-width: 100%;
 }
-.banner .welcome{
+.banner__textContainer{
     background-color: #FEB614;
     color: white;
     padding: 30px;
@@ -35,73 +35,74 @@ header h1 {
     left: 8px;
     top: 30%;
 }
-.banner h2{
+.banner__text{
     font-size: 50 px;
 }
-.banner h2 span {
+.banner__title{
     font-size: 1.2em;
 }
-nav {
+.menu{
     background-color:  #F4F4F4;
     padding: 20px ;
     position: sticky;
+    position: -webkit-sticky;
     top: 100px;
 }
-nav ul {
+.menu__list{
     white-space: nowrap;
     max-width:  1200px;
     margin: 0 auto;
 }
-nav li{
+.menu__option{
     width: 25%;
     display: inline-block;
     font-size:  24px;
 }
-nav li a{
+.menu__link{
     text-decoration: none;
     color: #4B4B4B;
 }
-nav li a.join{
+.menu__link--join{
     color: #F63232;
 }
-main {
+.mainContainer {
     max-width: 100%;
     width:   1200px;
     margin: 80px auto;
     padding: 0 40px;
     box-sizing: border-box ;
 }
-article h2{
+.mainContainer__title{
     color: #F63232;
     font-size: 48px;
 }
-article p{
+.mainContainer__text{
     line-height: 2em;
     color: #4b4b4b;
 }
-.images {
+.mainContainer__listOfImages {
     text-align: center;
     margin: 80px 0;
     white-space: nowrap;
 }
-.images li{
+.mainContainer__item{
     display: inline-block;
     width: 40%;
     margin: 20px 5%;
 }
-.images li img{
+.mainContainer__picture{
     max-width: 100%;
 }
-section.join {
+.secondaryContainer {
     background: #F4F4F4;
     text-align: center;
     padding: 60px 20px;
     color: #4b4b4b;
 }
-section.join h2{
+.secondaryContainer__title{
     font-size: 36px;
 }
-form input{
+.registration{
     margin: 20px 0;
     padding: 10px 20px;
     font-size: 24px;
@@ -116,26 +117,26 @@ footer {
 }
 /* pseudo classes */
 
-nav li a:hover{
+.menu__link:hover{
      text-decoration: underline;
 }
 
-.images li:hover{
+.mainContainer__item:hover{
     position: relative;
     top: -4px ;
 }
-form input:focus{
+.registration:focus{
     border: 4px dashed #4b4b4b;
     outline: none;
 }
-form input:valid{
+.registration:valid{
     border: 4px solid #71d300;
 }
-article p::first-line{
+.mainContainer__text::first-line{
     font-weight: bold;
     font-size: 1.2em;
 }
-section.join p::first-letter{
+.secondaryContainer::first-letter{
     font-weight: bold;
     font-size: 1.2em;
 }

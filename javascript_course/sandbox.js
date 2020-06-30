@@ -72,6 +72,7 @@
 // //template way
 // let result4 = `The blog called ${tittle} by ${author} has ${likes} likes`;
 // console.log(result4);
+javascript_course_1
 // // creating html template
 // let html = `
 //     <h2>${tittle}</h2>
@@ -345,6 +346,7 @@ const userTwo = userOne;
 console.log(userOne, userTwo);
 userOne.age = 40;
 console.log(userOne, userTwo);
+javascript_course_1
 // const para = document.querySelector('div.error ');
 // // console.log(para);
 // const paras = document.querySelectorAll('p');
@@ -409,3 +411,4 @@ paras.forEach( para =>{
 });
 
 // toggle() dodaje klasę
+
