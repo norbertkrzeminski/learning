@@ -373,72 +373,42 @@ const paras = document.querySelectorAll('p');
 //     console.log(para.innerText);
 //     para.innerText += ' new text';
 // })
-const content = document.querySelector('.content');
+// const content = document.querySelector('.content');
 // console.log(content.innerHTML);
 // content.innerHTML = '<h2>this is new h2 tag</h2>';
 // const people = ['mario', 'yoshi', 'toad'];
 // people.forEach( person =>{
 //     content.innerHTML += `<p>${person}</p>`;
 // })
-const link =  document.querySelector('a');
-console.log(link.getAttribute('href'));
-link.setAttribute('href', 'https://www.wikipedia.com');
-link.innerText = 'wikipedia';
-const msg = document.querySelector('p');
-console.log(msg.getAttribute('class'));
-msg.setAttribute('class', 'success');
-msg.setAttribute('style', 'color: green');
-const title = document.querySelector('h1');
-console.log(title.style.color);
-title.style.margin = '50px';
-//template way
-let result4 = `The blog called ${tittle} by ${author} has ${likes} likes`;
-console.log(result4);
-// creating html template
-let html = `
-    <h2>${tittle}</h2>
-    <p>By ${author}</p>
-    <span>This blog has ${likes} likes.</span>
-`;
-console.log(html);
-//arrays
-let ninjas = ['shaun','ryu', 'hun-li'];
-// ninjas[1] = 'ken';
-// console.log(ninjas[1]);
-// let ages = [20,25,30,35];
-// console.log(ages[2]);
-// let random = ['shaun', 'crystal', 30, 20];
-// console.log(random);
-console.log(ninjas.length);
-// array methods
-// let resultArray = ninjas.join(',');
-// let resultArray = ninjas.indexOf('shaun');
-// let resultArray = ninjas.concat(['ken', 'crystal']);
-let resultArray = ninjas.push('ken');
-resultArray = ninjas.pop();
-console.log(resultArray);
-//NULL
-let newAge = null;
-console.log(newAge, newAge + 3, `The age is ${newAge}` );
-// booleans & comparisons
-console.log(true, false);
-//methods can return booleans
-let emailBooleans = 'luigi@thenetworknija.co.uk'
-// let resultBooleans = emailBooleans.includes('@');
-// let namesBooleans = ['mario', 'luigi', 'toad'];
-// let resultBooleans = namesBooleans.includes('luigi')
-// cons ole.log(resultBooleans);
-//comparison operators
-let ageBooleans = 25;
-// console.log(ageBooleans == 25);
-// console.log(ageBooleans == 30);
-// console.log(ageBooleans != 30);
-// console.log(ageBooleans > 20);
-// console.log(ageBooleans < 20);
-// console.log(ageBooleans <= 25);
-let nameB = 'shaun';
-console.log(nameB == 'Shaun');
-console.log(nameB > 'crystal');
-console.log(nameB > 'Shaun');
-master
-master
+// const link =  document.querySelector('a');
+// console.log(link.getAttribute('href'));
+// link.setAttribute('href', 'https://www.wikipedia.com');
+// link.innerText = 'wikipedia';
+// const msg = document.querySelector('p');
+// console.log(msg.getAttribute('class'));
+// msg.setAttribute('class', 'success');
+// msg.setAttribute('style', 'color: green');
+// const title = document.querySelector('h1');
+// console.log(title.style.color);
+// title.style.margin = '50px';
+// title.style.fontSize = '50px';
+// const content = document.querySelector('p');
+// console.log(content.classList);
+// content.classList.add('error');
+// content.classList.remove('error');
+// content.classList.add('success');
+paras.forEach( para =>{
+    let content = para.innerHTML;
+    if(content.includes('error')){ // alternatywnie content.textContent.includes()
+        para.classList.add('error');
+    }
+    else if(content.includes('success')){
+        para.classList.add('success');
+    }
+    // else{
+    //     console.log('nothing to do');
+    // }
+});
+
+// toggle() dodaje klasę
+
