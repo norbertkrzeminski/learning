@@ -148,51 +148,51 @@ p::after{
     content: '...';
 }
 @media screen and (max-width: 1400px){
-    .banner .welcome h2{
+    .banner__text{
         font-size: 60px;
     }
-    nav li{
+    .menu__option{
         font-size: 18px ;
     }
 }
 @media screen and (max-width: 960px){
-    .banner .welcome h2{
+    .banner__text{
         font-size: 30px;
     }
 }
 @media screen and (max-width: 700px){
-    .banner .welcome{
+    .banner__textContainer{
         position: relative;
         text-align: center;
         padding: 10px;
     }
-    .banner .welcome br{
+    .banner__textContainer br{
         display: none ;
     }
-    .banner .welcome h2{
+    .banner__text{
         font-size: 20px;
     }
-    .banner .welcome span{
+    .banner__title{
         font-size: 1em;
     }
-    .images li{
+    .imainContainer__item{
         width: 100%;
         margin: 20px auto;
         display: block;
     }
 }
 @media screen and (max-width: 560px){
-    nav li{
+    .menu__option{
         font-size: 20px;
         position: relative;
         display: block;
         width: 100%;
         margin: 12px 0;
     }
-    header{
+    .logo{
         position: relative;
     }
-    nav{
+    .menu{
         top: 0;
     }
 }
