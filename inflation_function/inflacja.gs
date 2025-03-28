@@ -34,9 +34,9 @@ function inflacjaGUS(ignoreEmptyCheck = false) {
 
         const response = UrlFetchApp.fetch(url, options);
         const data = JSON.parse(response.getContentText());
-        const element = data.data.find(item => item.rownumber === 1);
+        const element = data.data.find(item => item.rownumber === 2);
 
-        Logger.log(element.wartosc - 100); // Wyświetli wartość "wartosc" z elementu, którego "rownumber" wynosi 1ś
+        Logger.log(element.wartosc - 100); // Wyświetli wartość "wartosc" z elementu, którego "rownumber" wynosi 2
         resultCell.setValue(element.wartosc - 100); // Wkleja wartość inflacji do odpowiedniej komórki w wierszu 17
       }
     } catch (error) {
