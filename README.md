@@ -1,8 +1,9 @@
-# Hello Folks
+# Hello there 
 
- I created this repo to learn both, frontend programming and basic git cli. Feel free to show me points where I can improve myself.
+I created this repo to learn new things. 
+At this moment I'm playing with Apps Scripts and it's usage with GCP and Google products.
 
-Currently all of included files are based on tutorials but in future I will update this readme with link to my projects.
+Feel free to show me points where I can improve myself.
 
 Best regards,
 Norbert
